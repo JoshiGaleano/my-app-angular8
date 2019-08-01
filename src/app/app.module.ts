@@ -25,7 +25,7 @@ import { MessagesComponent } from './messages/messages.component';
         HeroSearchComponent
     ],
     imports: [
-        BrowserModule,
+        BrowserModule.withServerTransition({ appId: 'serverApp' }),
         FormsModule,
         AppRoutingModule,
         HttpClientModule,
